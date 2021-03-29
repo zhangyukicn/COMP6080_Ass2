@@ -41,6 +41,7 @@ var following_name_list = '';
 
 
 
+
 /*********  Sign and Login button **********/
 const sign_up = document.getElementById("sign_up");
 const log_in = document.getElementById("log_in");
@@ -497,7 +498,7 @@ const loadfeed = () => {
                         document.getElementById("main_post_area").appendChild(postBox);
                     }
 
-
+                    /////like_button_
                     var ChildNode_test = document.getElementById("main_post_area").childNodes;
                     for (let i = 0; i < result["posts"].length; i++) {
                         var childNodes_like_button = ChildNode_test[i].childNodes[4].childNodes[0];
@@ -740,11 +741,10 @@ const profile_my_self = () => {
                             var comments_detail_comment = result["comments"][j]['comment'];
                             var comments_detail_time = result["comments"][j]['published'];
 
-                            //alert(comments_detail);
-                            // console.log(comments_detail);
+
 
                             var detail_time = TimeCalcute(comments_detail_time);
-                            // 
+
                             comments_detail_username_box.innerText = comments_detail_username + ":";
                             comments_detail_comment_box.innerText = comments_detail_comment;
                             comments_detail_time_box.innerText = detail_time;
@@ -799,7 +799,6 @@ const profile_my_self = () => {
                             discription_input.style.display = "flex";
                             discription_button.style.display = 'block';
                         })
-
 
 
                         discription_input.style.display = "none";
@@ -1548,8 +1547,8 @@ following_button.addEventListener("click", event => {
         following_name_list = '';
         load_user_information()
             .then(result => {
-                console.log("I'm in following button");
-                console.log(result);
+                // console.log("I'm in following button");
+                // console.log(result);
                 following_name_list = '|';
                 for (let i = 0; i < result['following'].length; i++) {
                     following_id = result['following'][i];
