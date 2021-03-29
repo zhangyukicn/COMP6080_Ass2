@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,299 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- You can add your styles and scripts here -->
     <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <!-- <script type="module" src="src/function.js"></script> -->
+    <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">   -->
+
     <script type="module" src="src/helpers.js"></script>
     <script type="module" src="src/api.js"></script>
-</head>
-<body>
-    <!-- This is an example app structure, you can modify this as much as you choose --> 
-    <header class="banner">
-        <h1>Quickpic</h1>
-        <ul class="nav">
-            <li class="nav-item">Item</li>
-            <li class="nav-item">Item</li>
-        </ul>
-    </header>
-    <main role="main">
-        <!-- app goes here --> 
-    </main>
-    <footer>
-        <p>&copy; Quickpic</p>
-    </footer>
     <script type="module" src="src/main.js"></script>
+</head>
+
+<body>
+    <!-- This is an example app structure, you can modify this as much as you choose -->
+    <div class="main_container">
+        <!-- edit part -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span id="closebutton" class="close">&times;</span>
+                <div id="edit_part">
+
+                    <h3>Your New Name</h3>
+                    <input id="login_new_Usersname" class="input_style" type="text" />
+                    <h3>Your New Email</h3>
+                    <input id="login_new_Email" class="input_style" type="text" />
+                    <h3>Your New Password</h3>
+                    <input id="login_new_PassWord" class="input_style" type="text" />
+                    <div style="margin: 10px;">
+                        <button id="confirm_for_small_box" class="login_area">confirm</button>
+                    </div>
+
+                </div>
+                <div id="search_part">
+                    <h1>Search</h1>
+                    <input id="what_the_Usersname" class="input_style" type="text" />
+                    <div style="margin: 10px;">
+                        <button id="search_for_small_box" class="login_area">confirm</button>
+                    </div>
+                </div>
+                <div id="show_follow_people_name">
+                    <h1>Username</h1>
+                    <h1 id="following_s_people_name"> name </h1>
+                </div>
+                <div id="the_comment_yousent">
+                    <h1>Comment</h1>
+                    <input type="text" value="0" id="comment-post-id-hidden" ß>
+                    <input id="Comment_itself" class="input_style" type="text" />
+                    <button id="comment_submit_button" class="login_area">submit</button>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <!-- login_in -->
+        <div id="show_left_login" class="left_sub_contain">
+            <div class="head_container">
+                <div class="head">
+                    <h1>Quickpic</h1>
+                </div>
+                <div>
+                    <img class="picture" src="picture/unsw.svg" />
+                </div>
+
+
+            </div>
+            <div class="login_contain">
+                <div class="pass_word_part">
+                    <div class="sub_pass_word_part">
+                        <div class="blanket">
+                        </div>
+                        <div class="base_title_container">
+                            Welcome to Login
+                        </div>
+                        <div class="Username_area">
+                            <h2>Username</h2>
+                            <input id="login_Usersname" class="input_style" type="text" />
+                        </div>
+                        <div class="Username_area">
+                            <h2>Passward</h2>
+                            <input id="login_Passward" class="input_style" type="text" />
+                        </div>
+                        <div class="Username_area">
+                            <h2>Confirm Passward</h2>
+                            <input id="login_confirm_Passward" class="input_style" type="text" />
+                        </div>
+                        <div class="sign_login_area">
+                            <button id="log_in" class="login_area">Log in</button>
+                            <button id="sign_up" class="sign_area">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="show_right_login" class="right_sub_contain">
+            <div class="sub_right_sub_contain">
+                <div class='word_text'>
+                    <h3> Quickpic lets you share your own images and photos, and follow the pictures your friends post.
+                        <br />
+                        <br /> When you are ready!! Join us. Try it now by Signing in and Loging in.
+
+                    </h3>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; z5238743</p>
+            </footer>
+        </div>
+
+        <!-- sign_in -->
+        <div id="show_left_sign" class="left_sub_sign_contain">
+            <div class="sub_right_sub_contain">
+                <div class="Logo_picture">
+                </div>
+            </div>
+        </div>
+
+        <div id="show_right_sign" class="right_sub_sign_contain">
+            <div class="head_container_sign">
+                <div class="head">
+                    <h2>Quickpic</h2>
+                </div>
+                <div id="Show_Success" class="Show_Success">
+                    <h2>Success! Press "Back to Login"</h2>
+                </div>
+
+            </div>
+            <div class="login_contain">
+                <div class="pass_word_part_sign">
+                    <div class="sub_pass_word_part">
+                        <div class="blanket">
+                        </div>
+                        <div class="base_title_container">
+                            Welcome to Sign up
+                        </div>
+                        <div class="Username_area_sign">
+                            <h2>Username</h2>
+                            <input id="sign_in_Username" class="input_style" type="text" />
+                        </div>
+                        <div class="Username_area_sign">
+                            <h2>Password</h2>
+                            <input id="sign_in_password" class=" input_style" type="text" />
+                        </div>
+                        <div class="Username_area_sign">
+                            <h2>Confirm Password</h2>
+                            <input id="sign_in_confirmed_password" class="input_style" type="text" />
+                        </div>
+                        <div class="Username_area_sign">
+                            <h2>Email Address</h2>
+                            <input id="sign_in_Email" class="input_style" type="text" />
+                        </div>
+                        <div class="Username_area_sign">
+                            <h2>Name</h2>
+                            <input id="sign_in_Name" class="input_style" type="text" />
+                        </div>
+                        <div class="sign_login_area_2">
+                            <button id="submit_buttom" class="sign_area">Submit</button>
+                            <button id="back_to_Log_in" class="sign_area">Back to Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>&copy; z5238743</p>
+            </footer>
+        </div>
+
+        <div id="show_left_sign_2" class="left_sub_sign_contain">
+            <div class="sub_right_sub_contain">
+                <div class="Logo_picture">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- main contain ------home_page-->
+        <div id="show_right_already_login" class="right_sub_contain_2">
+            <div class="sub_right_sub_contain">
+                <div id="word_text" class='word_text'>
+                    <h1>Welocome to Quickpic</h1>
+                    <br />
+                    <br />
+                    <p> Quickpic lets you share your own images and photos, and follow the pictures your friends post.
+                    </p>
+                </div>
+
+
+
+
+                <div id="profile_information" class="information_homepage_contain">
+                    <div class="follow_area">
+                        <div>
+                            <button id="follow_other" class="word_text_5">follow</button>
+                        </div>
+                    </div>
+                    <h1 class="word_text_4"> <span id='Your' style="color: #fff;">Your</span>'s Profile</h1>
+                    <h2 class="word_text_4">Username</h2>
+                    <p id="profile_username" class="word_text_2 ">Username </p>
+                    <h2 class="word_text_4">Email</h2>
+                    <p id="profile_Email" class="word_text_2 ">Emial_information</p>
+
+                    <button id="followers_button_1" class="word_text_3"> followers </button>
+                    <p id="profile_followers" class="word_text_2 ">followers_information</p>
+
+                    <button id="following_button" class="word_text_3"> following </button>
+                    <p id="profile_following" class="word_text_2 ">following_information</p>
+
+                    <button class="word_text_3"> Post</button>
+                    <p id="profile_Post" class="word_text_2 ">Post_information</p>
+                    <div class="edit_area">
+                        <div>
+                            <button id="edit_yourself" class="word_text_5">Edit</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <footer>
+                <p>&copy; z5238743</p>
+            </footer>
+
+
+            <!-- profile contain ------home_page-->
+        </div>
+
+        <div id="show_left_already_login" class="left_sub_contain_2">
+            <div class="head_container">
+                <div class="head">
+                    <h1>Quickpic</h1>
+                </div>
+                <div>
+                    <button id="home_page" class="login_area_already">Home Page</button>
+                </div>
+                <div>
+                    <button id="Profile" class="login_area_already">Profile</button>
+                </div>
+                <div>
+                    <button id="area_search" class="login_area_already">Search</button>
+                </div>
+                <div>
+                    <button id="New_Post" class="login_area_already">New Post</button>
+                </div>
+                <div>
+                    <button id="Log_out_buttom" class="login_area_already">Log out</button>
+                </div>
+
+                <div>
+                    <img class="picture" src="picture/unsw.svg" />
+                </div>
+            </div>
+            <div id="main_post_area" class="post_area">
+
+            </div>
+            <div id="profile_main_post_area" class="post_area">
+
+            </div>
+            <div id="others_profile_main_post_area" class="post_area">
+
+            </div>
+            <div id="post_picture">
+                <input id="filePost" type="file" name="postFile" value="Browse" class="btn btn-info">
+                <textarea id="new-post-text" rows="10" cols="50"></textarea>
+                <input id="send_post" type="button" name="sendNewPost" value="SEND!" class="btn btn-info">
+                <input id="cancel_post" type="button" name="cancelNewPost" value="CANCEL" class="btn btn-info">
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
 </body>
+
 </html>

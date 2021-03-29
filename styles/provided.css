@@ -1,6 +1,7 @@
-
 /* base styles, feel free to edit */
-html, body {
+
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: #fafafa;
@@ -15,20 +16,21 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color:white;
+    background-color: white;
     min-height: 60px;
-    border-bottom: 1px solid rgba(0,0,0,.0975);
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
 }
 
 footer {
-    border-top: 1px solid rgba(0,0,0,.0975);
+    /* border-top: 1px solid rgba(0,0,0,.0975); */
     padding: 10px;
-    background-color:white;
     min-height: 60px;
     text-align: right;
+    width: 100%;
 }
 
-.banner > *, footer > * {
+.banner>*,
+footer>* {
     margin: 10px 25px;
 }
 
@@ -45,4 +47,660 @@ footer {
     list-style-type: none;
 }
 
+
 /* Add your styles here */
+
+.main_container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100%;
+    width: 100%;
+}
+
+.left_sub_contain {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    /* background-color:rgb(49, 194, 86); */
+}
+
+.right_sub_contain {
+    /* background:radial-gradient(circle,#1a42d1, #0d5fff); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 519px;
+    justify-content: center;
+    background-image: url(../picture/unsw-background_1.png);
+}
+
+.sub_right_sub_contain {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head_container {
+    height: 10%;
+    color: #1f2329;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.head {
+    height: 100%;
+}
+
+.login_contain {
+    display: flex;
+    background-color: #fafafa;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.word_text {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #fff;
+    position: relative;
+    text-align: left;
+    align-items: center;
+}
+
+.Logo_picture {
+    height: 200px;
+    width: 300px;
+}
+
+.pass_word_part {
+    width: 500px;
+    height: 550px;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    border: grey, solid;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.sub_pass_word_part {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blanket {
+    height: 30px;
+    height: 15%;
+}
+
+.Username_area {
+    color: #1f2329;
+    height: 25%;
+}
+
+.base_title_container {
+    font-size: 35px;
+    color: #1f2329;
+    font-weight: 600;
+    line-height: 30px;
+    height: 10%;
+}
+
+.sign_login_area {
+    display: flex;
+    height: 20%;
+}
+
+.input_style {
+    width: 100%;
+    height: 25%;
+    font-size: 20px;
+}
+
+.login_area {
+    border-radius: 5px;
+    font-size: 20px;
+    border-color: black;
+    height: 50%;
+    width: 28%;
+    color: #fff;
+    font-weight: bold;
+    background: #fde452;
+    margin-right: 10px;
+}
+
+.sign_area {
+    border-radius: 5px;
+    font-size: 20px;
+    border-color: black;
+    height: 50%;
+    width: 40%;
+    color: #fed709;
+    font-weight: bold;
+    background: #fff;
+}
+
+.picture {
+    height: 100%;
+    width: 100px;
+}
+
+.background_picture {
+    width: 100%;
+    height: 100%;
+}
+
+.left_sub_sign_contain {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 5%;
+    justify-content: center;
+    background-image: url(../picture/unsw.svg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.right_sub_sign_contain {
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+}
+
+.head_container_sign {
+    height: 10%;
+    color: #1f2329;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(../picture/unsw-background.png);
+}
+
+.pass_word_part_sign {
+    width: 550px;
+    height: 600px;
+    padding: 0;
+    background-image: url(../picture/unsw-background.png);
+    display: flex;
+    border: grey, solid;
+    flex-direction: column;
+    align-items: center;
+    /* padding-bottom: 30px; */
+}
+
+.Username_area_sign {
+    color: #1f2329;
+    height: 15%;
+}
+
+.sign_login_area_2 {
+    margin-top: 30px;
+    height: 30%;
+}
+
+.right_sub_contain_2 {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 519px;
+    justify-content: center;
+    background-image: url(../picture/unsw-background_1.png);
+}
+
+.left_sub_contain_2 {
+    display: none;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    /* background-color:rgb(49, 194, 86); */
+}
+
+.login_contain_already {
+    display: flex;
+    background-color: #fafafa;
+    height: 90%;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.login_area_already {
+    border-radius: 5px;
+    font-size: 20px;
+    border-color: #fff;
+    height: 100%;
+    width: 100px;
+    color: #fff;
+    font-weight: bold;
+    background: #fde452;
+    margin-right: 10px;
+}
+
+.information_homepage_contain {
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div_two_part {
+    display: flex;
+}
+
+.Show_Success {
+    display: none;
+}
+
+.word_text_2 {
+    margin: 0 auto;
+    width: 349px;
+    font-size: 28px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+
+.word_text_3 {
+    border-radius: 5px;
+    font-size: 28px;
+    border-color: transparent;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    background: transparent;
+    margin-right: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.profile_style {
+    display: flex;
+    flex-direction: row;
+}
+
+.word_text_4 {
+    color: #fff;
+}
+
+.word_text_5 {
+    border-radius: 5px;
+    font-size: 25px;
+    border-color: transparent;
+    height: 70%;
+    /* width:100%; */
+    font-weight: bold;
+    background: transparent;
+    margin-right: 10px;
+    text-align: center;
+    margin: 10px;
+    /* border-color: black; */
+    color: #fde452;
+    background: #fff;
+}
+
+.follow_area {
+    justify-content: left;
+    display: flex;
+    align-content: left;
+    width: 400px;
+    /* justify-content: space-evenly; */
+}
+
+.edit_area {
+    justify-content: flex-end;
+    display: flex;
+    align-content: right;
+    width: 400px;
+}
+
+
+/* try modal 在中间 */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#edit_part {
+    display: none;
+}
+
+#search_part {
+    display: none;
+}
+
+#show_follow_people_name {
+    display: none;
+}
+
+.post_area {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+}
+
+.small_sub_area_post {
+    background: white;
+    height: 575px;
+    width: 500px;
+    margin: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 1px solid #9b9b9b;
+}
+
+.a_author_area {
+    display: flex;
+    width: 250px;
+    background: white;
+    height: 50px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.a_author_picture {
+    height: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    font-weight: bold;
+    background: #fde452;
+    border-radius: 5px;
+}
+
+.discription_area {
+    display: flex;
+    width: 500px;
+    background: white;
+    height: 50px;
+    border-bottom: 1px solid #9b9b9b;
+    align-items: center;
+    /* border-top: 1px solid #9b9b9b; */
+}
+
+.images_style {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    /* background: white; */
+    height: 275px;
+    border-bottom: 1px solid #9b9b9b;
+    border-top: 1px solid #9b9b9b;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_insert {
+    height: 275px;
+    width: 275px;
+}
+
+.comment_like_style {
+    width: 500px;
+    background: white;
+    height: 25px;
+    display: flex;
+}
+
+.login_area_like {
+    border-radius: 5px;
+    font-size: 15px;
+    border-color: black;
+    height: 100%;
+    width: 40%;
+    color: #fff;
+    font-weight: bold;
+    background: #fde452;
+    /* margin-right:20px;
+    margin-left: 20px; */
+}
+
+.comment_area {
+    width: 500px;
+    background: white;
+    height: 125px;
+    border-bottom: 1px solid #9b9b9b;
+    border-top: 1px solid #9b9b9b;
+    display: flex;
+    flex-direction: column;
+}
+
+.count_div_comment {
+    height: 5px;
+    margin-block-start: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: pink;
+}
+
+#profile_main_post_area {
+    display: "none";
+}
+
+#others_profile_main_post_area {
+    display: "none";
+}
+
+.time_div_comment {
+    height: 25px;
+    margin-block-start: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 1000px;
+    font-size: 10px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#the_comment_yousent {
+    display: "none";
+}
+
+.count_div_comment_id {
+    height: 5px;
+    margin-block-start: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+}
+
+.small_comment_respectively {
+    display: flex;
+    /* height:20px; */
+    /* background: wheat; */
+    flex-direction: column;
+}
+
+.small_information {
+    width: 20%;
+    margin-right: 8px;
+}
+
+.small_information_comment {
+    width: 60%;
+}
+
+.small_information_time {
+    width: 20%;
+    font-size: 10px;
+}
+
+.another_box_style {
+    display: flex;
+    border-bottom: 1px solid #9b9b9b;
+}
+
+.red_heart {
+    position: absolute;
+    top: -100px;
+    left: 200px;
+    width: 0px;
+    height: 0px;
+    border: 0px solid transparent;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.the_number_of_people_like {
+    height: 25px;
+}
+
+#post_picture {
+    display: none;
+    width: 400px;
+    height: 500px;
+    margin: 10px auto 0px auto;
+    order: 1px solid black;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login_area_Delete {
+    height: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: red;
+    font-weight: bold;
+    background: #fde452;
+    border-radius: 5px;
+}
+
+#Discription_yousent {
+    display: "none";
+}
+
+.discription_input {
+    display: flex;
+    width: 500px;
+    background: white;
+    height: 30px;
+    border-bottom: 1px solid #9b9b9b;
+    align-items: center;
+}
+
+.discription_button {
+    display: block;
+    width: 500px;
+    background: #fde452;
+    height: 20px;
+    border-bottom: 1px solid #9b9b9b;
+    align-items: center;
+    color: red;
+}
+
+@media only screen and (max-width: 400px) {
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100%;
+        width: 100%;
+    }
+    .right_sub_contain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        background-image: url(../picture/unsw-background_1.png);
+    }
+    .left_sub_contain {
+        width: 100%;
+    }
+    .right_sub_contain_2 {
+        width: 100%;
+    }
+    .left_sub_contain_2 {
+        width: 100%;
+    }
+    .left_sub_sign_contain {
+        width: 100%;
+    }
+    .right_sub_sign_contain {
+        width: 100%;
+    }
+    .post_area {
+        height: 100%
+    }
+}
