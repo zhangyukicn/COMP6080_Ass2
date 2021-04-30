@@ -1,13 +1,9 @@
-# Assessment 2 - Vanilla JS: LinkedPic
+# Vanilla JS: LinkedPic
 
 1. Background & Motivation
 2. The Task (Frontend)
 3. The Support (Backend)
 4. Constraints & Assumptions
-5. Marking Criteria
-6. Originality of Work
-7. Submission
-8. Late Submission Policy
 
 ## 0. Change Log
 
@@ -17,22 +13,18 @@ Coming Soon
 
 Web-based applications are becoming the most common way to build a digital capability accessible to a mass audience. While there are modern tools that help us build these rapidly, it's important to understand the fundamental Javascript-based technology and architectures that exist, both to gain a deeper understanding for when these skills may be needed, but also to simply understand the mechanics of fundamental JS. Even when working with a high level framework like React, understanding (in-concept) the code that is transpiled-to will ensure you're a more well rounded web-based engineer.
 
-This assignment consists of building a **front-end** website in Vanilla JS (no React or other frameworks). This front-end will interact with a RESTFUL API HTTP back-end that is built in Python/Flask and provided to you.
-
-Information about how to talk to this API can be found the "promises & fetch" lecture.
-
 The page you build is required to be a single page app (SPA). Single page apps give websites an "app-like feeling", and are characterised by their use of a single full load of an initial HTML page, and then using AJAX/fetch to dynamically manipulate the DOM without ever required a full page reload. In this way, SPAs are generated, rendered, and updated using Javascript. Because SPAs don’t require a user to navigate away from a page to do anything, they retain a degree of user and application state. In short, this means you will only ever have `index.html` as your HTML page, and that any sense of "moving between pages" will just be modifications of the DOM.
 
 ## 2. The Task (Frontend)
 
-Stub code has been provided to help you get started in:
+Code has been provided to help you get started in:
  * `frontend/index.html`
  * `frontend/styles/provided.js`
  * `frontend/src/api.js`
  * `frontend/src/helpers.js`
  * `frontend/src/main.js`
 
-You can modify or delete this stub code of you choose. It's simply here to potentially provide some help.
+You can modify or delete this code of you choose. It's simply here to potentially provide some help.
 
 To work with your frontend code locally with the web server, you will have to run another web server to serve the frontend. To do this, in you rproject folder you can run:
 
@@ -40,7 +32,7 @@ To work with your frontend code locally with the web server, you will have to ru
 
 This will start up a second HTTP server where if you navigate to `http://localhost:8000` (or whatever URL it provides) it will run your `index.html`
 
-### 2.1. Milestone 1 - Registration & Login (15%)
+### 2.1. Milestone 1 - Registration & Login
 
 This focuses on the basic user interface to register and log in to the site.
 
@@ -68,7 +60,7 @@ This focuses on the basic user interface to register and log in to the site.
  * Whenever the frontend or backend produces an error, there shall be an error popup on the screen with a message (either a message derived from the backend error rresponse, or one meaningfully created on the frontend).
  * This popup can be closed/removed/deleted by pressing an "x" or "close" button.
 
-### 2.2. Milestone 2 - Basic Feed (10%)
+### 2.2. Milestone 2 - Basic Feed 
 
 Milestone 2 focuses on fetching feed data from the API.
 
@@ -88,7 +80,7 @@ Each post should display:
 
 Although this is not a graphic design exercise you should produce pages with a common and somewhat distinctive look-and-feel. You may find CSS useful for this.
 
-## 2.3. Milestone 3 - Advanced Feed (10%)
+## 2.3. Milestone 3 - Advanced Feed 
  
 Milestone 3 focuses on a richer UX and will require some backend interaction.
 
@@ -106,7 +98,7 @@ Milestone 3 focuses on a richer UX and will require some backend interaction.
 * Users can page between sets of results in the feed using the position token with (`GET user/feed`).
 * Note users can ignore this if they properly implement Infinite Scroll in a later milestone.
 
-## 2.4. Milestone 4 - Other users & profiles (10%)
+## 2.4. Milestone 4 - Other users & profiles 
 
 ### 2.4.1. Profile View / Profile View
 * Let a user click on a user's name from a post and see a page with the users name, and any other info the backend provides.
@@ -118,7 +110,7 @@ Milestone 3 focuses on a richer UX and will require some backend interaction.
 * Add a list of everyone a user follows in their profile page.
 * Add just the count of followers / follows to everyones public user page
 
-## 2.5. Milestone 5 - Adding & updating content (10%)
+## 2.5. Milestone 5 - Adding & updating content 
 
 Milestone 5 focuses on more advanced features that will take time to implement and will involve a more rigourously designed app to execute.
 
@@ -137,7 +129,7 @@ Milestone 5 focuses on more advanced features that will take time to implement a
   * Update password
   * Update name
 
-## 2.6. Milestone 6 - Challenge Components (`advanced`) (10%)
+## 2.6. Milestone 6 - Challenge Components (`advanced`)
 
 ### 2.6.1. Infinite Scroll
 * Instead of pagination, users an infinitely scroll through results. For infinite scroll to be properly implemented you need to progressively load posts as you scroll. 
@@ -150,7 +142,7 @@ Milestone 5 focuses on more advanced features that will take time to implement a
 
 *Polling is very inefficient for browsers, but can often be used as it simplifies the technical needs on the server.*
 
-## 2.7. Milestone 7 - Very Challenge Components (`advanced *= 2`) (5%)
+## 2.7. Milestone 7 - Very Challenge Components (`advanced *= 2`) 
 
 ### 2.7.1. Static feed offline access
 * Users can access the most recent feed they've loaded even without an internet connection.
@@ -169,16 +161,6 @@ Users can access different pages using URL fragments:
 
 _No course assistance will be provided for this component, you should do your own research as to how to implement this._
 
-
-## 2.8. Bonus Marks (5%)
-
-An extra 5% of the assignment can be attained via bonus marks, meaning a maximum mark of 105/100. Any bonus marks that extend your ass2 mark above 100% will bleed into other assignment marks, but cannot contribute outside of the 60% of the course that is allocated for assignment marks
-
-Your bonus feature(s) can be anything. You just have to think of something that could make your web app stand out in some minor or major way. Simple examples would include just making sure that your user interface and user experience stands out amongst other students, maybe through some user testing.
-
-You could also add extra features, such as some friend end form validations - the possibilities are limitless.
-
-If you do implement a bonus feature, describe the feature and it's details in `bonus.md` in the root directory of this repository.
 
 ## 3. The Support (Backend) - no work required
 
@@ -218,7 +200,7 @@ For example, after registering a user, you can call `PUT /user/follow` to follow
 
 ### 4.1. Languages
 
-You must implement this assignment in ES6-compliant vanilla javascript. You cannot use ReactJS, JQuery, or other abstract frameworks. You can not, for example, use the popular Javascript framework such as <a  href="https://angular.io/">Angular</a> or <a  href="https://reactjs.org/">React</a>
+Implement this project in ES6-compliant vanilla javascript. You cannot use ReactJS, JQuery, or other abstract frameworks. You can not, for example, use the popular Javascript framework such as <a  href="https://angular.io/">Angular</a> or <a  href="https://reactjs.org/">React</a>
 
 ### 4.2. Browser Compatibility
 
@@ -246,104 +228,3 @@ In this assignment, you are:
 ### 4.6. Async, Await, Promises
 
 You are prohibited from using the `async` and `await` syntax in this assignment. You must use ES6 Promises.
-
-## 5. Marking Criteria
-
-Your assignment will be hand-marked by tutor(s) in the course according to the criteria below.
-
-<table>
-	<tr>
-		<th>Criteria</th>
-		<th>Weighting</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>Compliance to task requirements</td>
-		<td>70%</td>
-		<td>
-			<ul>
-				<li>Each milestone specified a aprticular % of overall assignment (summing up to 70%). Implement those components as required to receive the marks.</li>
-			</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>Mobile Responsiveness</td>
-		<td>15%</td>
-		<td>
-			<ul>
-				<li>Your application is usable for desktop sizes generally, tablet sizes generally, and mobile sizes generally (down to 400px wide, 700px high).</li>
-			</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>Code Style</td>
-		<td>10%</td>
-		<td>
-			<ul>
-				<li>Your code is clean, well commented, with well-named variables, and well laid out.</li>
-			</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>Usability & Accessibility</td>
-		<td>5%</td>
-		<td>
-			<ul>
-				<li>Your application is usable and easy to navigate. No obvious usability issues or confusing layouts/flows.</li>
-				<li>Your application follows standard accessibility guidelines, such as use of alt tags, and colours that aren't inaccessible.</li>
-        <li>Please add a few paragraphs (or series of dot points) to the file `usability.md` in your repository directory to outline the key steps you've taken to improve the usability and accessibility of your web app.</li>
-			</ul>
-		</td>
-	</tr>
-</table>
-
-## 6. Originality of Work
-
-The work you submit must be your own work.  Submission of work partially or completely derived from
-any other person or jointly written with any other person is not permitted.
-
-The penalties for such an offence may include negative marks, automatic failure of the course and
-possibly other academic discipline. Assignment submissions will be examined both automatically and
-manually for such submissions.
-
-Relevant scholarship authorities will be informed if students holding scholarships are involved in
-an incident of plagiarism or other misconduct.
-
-Do not provide or show your assignment work to any other person &mdash; apart from the teaching
-staff of COMP6080.
-
-If you knowingly provide or show your assignment work to another person for any reason, and work
-derived from it is submitted, you may be penalized, even if the work was submitted without your
-knowledge or consent.  This may apply even if your work is submitted by a third party unknown to
-you.
-
-Every time you make commits or pushes on this repository, you are acknowledging that the work you
-submit is your own work (as described above).
-
-Note you will not be penalized if your work has the potential to be taken without your consent or
-knowledge.
-
-**For students who completed COMP2041 in 2018**, this assignment is very similar to another you would 
-have completed. Please remember that UNSW plagiarism guidelines prevent you from using your previous work
-in other courses. This means you must complete this assignment without using/copying any code from
-other assignments. Generally though, this should be OK, as since it's been quite a while since COMP2041
-I am sure many students will not want to reuse their approaches from less-knowledgable selves.
-
-## 7. Submission
-
-This assignment is due *Monday 29th of March, 19:59:59*.
-
-Our systems automatically record the most recent push you make to your `master` branch. Therefore,
-to "submit" your code you simply need to make sure that your `master` branch (on the gitlab website)
-is the code that you want marked for this task.
-
-## 8. Late Submission Policy
-
-If your assignment is submitted after this date, each hour it is late reduces the maximum mark it can achieve by 2%.
-
-For example if an assignment you submitted with a raw awarded mark of 85% was submitted 5 hours late, the late submission would have no effect (as maximum mark would be 90%). If the same assignment was submitted 20 hours late it would be awarded 60%, the maximum mark it can achieve at that time.
-
-## 9. FAQ
-
-Q. Is the dummy Anon user initially following anyone?
-A. No, you will need to manually follow people in order to get `GET /dummy/user/feed` returning something useful
