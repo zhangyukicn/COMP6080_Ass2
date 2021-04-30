@@ -206,25 +206,25 @@ Implement this project in ES6-compliant vanilla javascript. You cannot use React
 
 You should ensure that your programs have been tested on one of the following two browsers:
  * Locally, Google Chrome (various operating systems) version 85.XX
- * On CSE machines, Chromium version 83.XX
+
 
 ### 4.3. External libraries
 
- * You may use small amounts (&lt; 10 lines) of general purpose code (not specific to the assignment) obtained from a site such as Stack Overflow or other publically available resources. You should attribute clearly the source of this code in a comment with it. You can not otherwise use code written by another person.
- * You may include external CSS libraries in this assignment (with the `<link />` tag). You must attribute these sources (i.e. provide the URL/author in source code comments). For example, you are permitted to use the popular <a href="https://getbootstrap.com/">Bootstrap</a> CSS framework. Some Bootstrap functionality relies on accompanying Javascript. You are permitted to include this Javascript. The  Javascript accompanying Bootstrap requires the popular general purpose Javascrpt library <a href="https://jquery.com/">jQuery</a>.  You are permitted to include <b>jQuery</b> so bootstrap can use it.  However you are not permitted to use <b>jQuery</b> in the code you write for the assignment.
+ * You may use small amounts (&lt; 10 lines) of general purpose code (not specific to the project) obtained from a site such as Stack Overflow or other publically available resources. You should attribute clearly the source of this code in a comment with it. You can not otherwise use code written by another person.
+ * You may include external CSS libraries in this project (with the `<link />` tag). You must attribute these sources (i.e. provide the URL/author in source code comments). For example, you are permitted to use the popular <a href="https://getbootstrap.com/">Bootstrap</a> CSS framework. Some Bootstrap functionality relies on accompanying Javascript. You are permitted to include this Javascript. The  Javascript accompanying Bootstrap requires the popular general purpose Javascrpt library <a href="https://jquery.com/">jQuery</a>.  You are permitted to include <b>jQuery</b> so bootstrap can use it.  However you are not permitted to use <b>jQuery</b> in the code you write for the project.
  * You may **NOT** directly use external JavaScript. Do not use NPM except to install the helper development libraries.
 
 ### 4.4. Other Requirements
  * The specification is intentionally vague to allow you to build frontend components however you think are visually appropriate. Their size, positioning, colour, layout, is in virtually all cases completely up to you. We require some basic criteria, but it's mainly dictating elements and behaviour.
- * This is not a design assignment. You are expected to show common sense and critical thinking when it comes to basic user experience and visual layout, but you are not required to be creative to achieve full marks.
+ * This is not a design project. You are expected to show common sense and critical thinking when it comes to basic user experience and visual layout, but you are not required to be creative to achieve full marks.
 
 ### 4.5. Static HTML, innerHTML, DOM manipulation
 
-In this assignment, you are:
+you are:
  * Allowed to add static HTML/CSS to the stub website provided (i.e. you can put raw HTML/CSS as if its a static page, even if you then later manipulate it with Javascript).
  * Allowed to build HTML elements and add CSS properties to the DOM via javascript. We expect this to be the most common way students build these pages
  * Are **not** allowed to use the `innerHTML` property of nodes/tags to set the inner HTML of an element. This has security vulnerabilities and is in general not best practice. Either statically add the HTML/CSS and manipulate it with javascript, or generate and build nodes/elements in Javascript (just like lectures/tutes/labs), or both. But don't set inner HTML.
 
 ### 4.6. Async, Await, Promises
 
-You are prohibited from using the `async` and `await` syntax in this assignment. You must use ES6 Promises.
+You are prohibited from using the `async` and `await` syntax in this project. You must use ES6 Promises.
